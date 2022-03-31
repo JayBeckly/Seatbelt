@@ -1,0 +1,38 @@
+---
+title: "Seatbelts"
+author: "Rebecca"
+date: "3/15/2022"
+output: html_document
+---
+```{r}
+data(Seatbelts)
+head(Seatbelts)
+####View(Seatbelts)
+Seat<- table(Seatbelts)
+chisq.test(Seatbelts)
+
+t.test(Seatbelts)
+```
+
+
+
+
+#### Report
+The Chi-square is 48980 with df = 1337 and  the p-value=2.2e-16 which is less than 0.05. Therefore, there is a relationship between the variables.
+
+T-Test
+There is a significant difference between the variables
+## Graphical visualisation
+```{r}
+hist(Seatbelts)
+plot(Seatbelts)
+barplot(Seatbelts)
+boxplot(Seatbelts)
+###pie(Seatbelts)
+
+```
+
+## Exploratory Data Analysis
+### Mean
+###Variance
+###SD
